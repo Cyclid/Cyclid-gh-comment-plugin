@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |s|
-  s.name        = 'cyclid-gh-comments-plugin'
+  s.name        = 'cyclid-gh-comment-plugin'
   s.version     = '0.1.0'
   s.licenses    = ['Apache-2.0']
-  s.summary     = 'Cyclid Github Comments plugin'
+  s.summary     = 'Cyclid Github Comment plugin'
   s.description = 'Add comments to Github issues & pull requests'
   s.authors     = ['Kristian Van Der Vliet']
   s.homepage    = 'https://cyclid.io'
