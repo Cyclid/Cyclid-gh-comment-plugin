@@ -31,7 +31,7 @@ PATH
 PATH
   remote: .
   specs:
-    cyclid-gh-comments-plugin (0.1.0)
+    cyclid-gh-comment-plugin (0.1.0)
       cyclid (~> 0.3)
       octokit (~> 4.3)
 
@@ -237,7 +237,7 @@ PLATFORMS
 
 DEPENDENCIES
   cyclid!
-  cyclid-gh-comments-plugin!
+  cyclid-gh-comment-plugin!
   rake
   rspec
   rubocop
