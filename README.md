@@ -20,7 +20,7 @@ $ service sidekiq restart
 | repo | Y | _None_ | Repository name |
 | number | Y | _None_ | The Issue or Pull Request ID |
 | comment | N | _None_ | The comment to add |
-| path | N _None_ | A path to the a file on the build host. The file contents will be used as the comment text |
+| path | N | _None_ | A path to the a file on the build host. The file contents will be used as the comment text |
 
 One of either `comment` or `path` must be given. If both are given, `path` will take precedence.
 
