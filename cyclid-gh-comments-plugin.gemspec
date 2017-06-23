@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |s|
   s.name        = 'cyclid-gh-comments-plugin'
   s.version     = '0.1.0'
@@ -8,4 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://cyclid.io'
   s.email       = 'contact@cyclid.io'
   s.files       = Dir.glob('lib/**/*')
+
+  s.add_runtime_dependency('cyclid', '~> 0.3')
+  s.add_runtime_dependency('octokit', '~> 4.3')
 end
