@@ -25,9 +25,9 @@ $ service sidekiq restart
 One of either `comment` or `path` must be given. If both are given, `path` will take precedence.
 
 The repository name must be in the form of owner/repository E.g. "Cyclid/Test". The plugin will
-use the Github OAuth token is one is available to add comments to Private repositories.
+use the Github OAuth token if one is available, to add comments to Private repositories.
 
-The Github plugin will add the repository owner, repository name and Pull Request ID to the context as follows:
+The Github plugin will add the repository owner, repository name and Pull Request ID to the job context as follows:
 
 | Name | Description |
 | --- | --- |
