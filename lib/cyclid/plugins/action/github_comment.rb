@@ -45,9 +45,7 @@ module Cyclid
           raise 'a github comment action requires a comment or file' if @comment.nil? && @path.nil?
         end
 
-        def perform(_log)
-          raise 'no OAuth token is available' if oauth_token.nil?
-
+        def perform(log)
           # If a path was given, read the file and use it as the comment
           if @path
             content = StringIO.new
@@ -63,6 +61,11 @@ module Cyclid
           # Append the comment
           client = Octokit::Client.new(access_token: oauth_token)
           client.add_comment(repo, number, comment)
+
+          [true, 0]
+        rescue StandardError => ex
+          log.write "Failed to add Github comment to #{repo} ##{number}: #{ex}"
+          [false, 0]
         end
 
         # Register this plugin

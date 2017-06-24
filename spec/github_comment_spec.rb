@@ -41,7 +41,7 @@ describe Cyclid::API::Plugins::GithubComment do
                                                        number: 42,
                                                        comment: comment)
       plugin.prepare(ctx: { organization: 'test' })
-      expect(plugin.perform(nil)).to be true
+      expect(plugin.perform(nil)).to match_array [true, 0]
     end
   end
 
@@ -66,7 +66,7 @@ describe Cyclid::API::Plugins::GithubComment do
                                                        number: 42,
                                                        path: '/path/to/file')
       plugin.prepare(ctx: { organization: 'test' }, transport: transport)
-      expect(plugin.perform(nil)).to be true
+      expect(plugin.perform(nil)).to match_array [true, 0]
     end
   end
 
