@@ -18,7 +18,7 @@
    ],
    "sequence" : [
       {
-         "stage" : "60_message"
+         "stage" : "test-message"
       }
    ]
 }
