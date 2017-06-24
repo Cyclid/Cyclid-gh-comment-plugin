@@ -83,7 +83,7 @@ Add a comment to the current Pull Request
   "name": "comment",
   "steps": [
     "action": "github_comment",
-    "repo": "%{github_owner}/%{github_repo}"
+    "repo": "%{github_owner}/%{github_repository}"
     "number": %{github_number}
     "comment": "Hello from Cyclid"
   ]
