@@ -1,0 +1,24 @@
+{
+   "name" : "60_message",
+   "environment": {
+
+   },
+   "stages" : [
+      {
+         "name" : "test-message",
+         "steps" : [
+            {
+               "action" : "github_comment",
+               "repo": "Cyclid/GithubTest",
+               "number": 6,
+               "comment" : "hello from %{name}"
+            }
+         ]
+      }
+   ],
+   "sequence" : [
+      {
+         "stage" : "60_message"
+      }
+   ]
+}
